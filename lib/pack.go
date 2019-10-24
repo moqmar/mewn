@@ -43,7 +43,7 @@ func GeneratePackFileString(assetBundle *ReferencedAssets, ignoreErrors bool) (s
 				return "", err
 			}
 			for _, file := range files {
-				// Read in File
+				// Read in file
 				packedData, err := CompressFile(file)
 				if err != nil && !ignoreErrors {
 					return "", err
